@@ -367,3 +367,6 @@ local kometa = {
         end)
     end
 }
+if getgenv().APIEnabled then
+    return kometa
+end
