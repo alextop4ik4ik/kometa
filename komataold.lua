@@ -21,7 +21,7 @@ local done = true
 -- Script tables
 
 local temptable = {
-    version = "1.6.4",
+    version = "394.34.0",
     MondoCollectTokens = false,
     blackfield = "Ant Field",
     LastFieldColor = 'White',
