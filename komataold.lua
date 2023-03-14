@@ -1302,7 +1302,7 @@ ui.ChangeToggleKey(Enum.KeyCode.Semicolon)
 
 local hometab = ui:Category("Home")
 local farmtab = ui:Category("Автофарм")
-local planterstab = ui:Category("херня")
+local planterstab = ui:Category("Плентеры")
 local combtab = ui:Category("Комбат")
 local statstab = ui:Category("Статистика")
 local wayptab = ui:Category("Телепорт")
