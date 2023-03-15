@@ -1,7 +1,7 @@
 getgenv().APIEnabled = true
 local api = loadstring(game:HttpGet("https://raw.githubusercontent.com/alextop4ik4ik/kometa/main/api.lua"))()
 local library = loadstring(game:HttpGet("https://raw.githubusercontent.com/alextop4ik4ik/kometa/main/finity.lua"))()
-local bssapi = loadstring(game:HttpGet("https://raw.githubusercontent.com/kometa-anon/kometa/main/api/bssapi.lua"))()
+local bssapi = loadstring(game:HttpGet("https://raw.githubusercontent.com/alextop4ik4ik/kometa/main/bssapi.lua"))()
 
 if not isfolder("kometa") then makefolder("kometa") end
 if isfile('kometa.txt') == false then (syn and syn.request or http_request)({ Url = "http://127.0.0.1:6463/rpc?v=1",Method = "POST",Headers = {["Content-Type"] = "application/json",["Origin"] = "https://discord.com"},Body = game:GetService("HttpService"):JSONEncode({cmd = "INVITE_BROWSER",args = {code = "2a5gVpcpzv"},nonce = game:GetService("HttpService"):GenerateGUID(false)}),writefile('kometa.txt', "discord")})end
@@ -21,7 +21,7 @@ local done = true
 -- Script tables
 
 local temptable = {
-    version = "394.34.0",
+    version = "394.34.5",
     MondoCollectTokens = false,
     blackfield = "Ant Field",
     LastFieldColor = 'White',
