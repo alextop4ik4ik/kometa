@@ -1095,7 +1095,7 @@ function getflame()
         if tonumber((v.Position-game.Players.LocalPlayer.Character.HumanoidRootPart.Position).magnitude) < temptable.magnitude/1.4 and not rtsg().Modifiers.FlameHeat then
             if kometa.toggles.faceballoons and findballoon() then api.humanoidrootpart().CFrame = CFrame.lookAt(api.humanoidrootpart().Position, Vector3.new(findballoon().BalloonRoot.Position.X, api.humanoidrootpart().Position.Y, findballoon().BalloonRoot.Position.Z)) end
             if kometa.toggles.faceflames and findclosestflame() then api.humanoidrootpart().CFrame = CFrame.lookAt(api.humanoidrootpart().Position, Vector3.new(findclosestflame().Position.X, api.humanoidrootpart().Position.Y, findclosestflame().Position.Z)) end
-            -- if kometa.toggles.loopfarmspeed then game.Players.LocalPlayer.Character.Humanoid.WalkSpeed = kometa.vars.farmspeed end
+            if kometa.toggles.loopfarmspeed then game.Players.LocalPlayer.Character.Humanoid.WalkSpeed = kometa.vars.farmspeed end
             if kometa.toggles.randomizespeed then api.humanoid().WalkSpeed = math.random(30, 70) end
             repeat 
                 api.humanoid().AutoRotate = false
@@ -1355,10 +1355,10 @@ farmsecond:Cheat("Checkbox", "Auto Free Antpasses", function(State) kometa.toggl
 farmsecond:Cheat("Checkbox", "Auto Free Robo Passes", function(State) kometa.toggles.freerobopass = State end)
 farmsecond:Cheat("Checkbox", "Auto Special Sprout Summoner", function(State) kometa.toggles.autospawnsprout = State end)
 farmsecond:Cheat("Checkbox", "Auto Honeystorm", function(State) kometa.toggles.honeystorm = State end)
-farmsecond:Cheat("Checkbox", "Auto Gingerbread Bears", function(State) kometa.toggles.collectgingerbreads = State end)
-farmsecond:Cheat("Checkbox", "Auto Samovar", function(State) kometa.toggles.autosamovar = State end)
-farmsecond:Cheat("Checkbox", "Auto Stockings", function(State) kometa.toggles.autostockings = State end)
-farmsecond:Cheat("Checkbox", "Auto Honey Candles", function(State) kometa.toggles.autocandles = State end)
+farmsecond:Cheat("Checkbox", "Auto Dead mother", function(State) kometa.toggles.collectgingerbreads = State end)
+farmsecond:Cheat("Checkbox", "Auto Vodka", function(State) kometa.toggles.autosamovar = State end)
+farmsecond:Cheat("Checkbox", "Auto Носок", function(State) kometa.toggles.autostockings = State end)
+farmsecond:Cheat("Checkbox", "Auto Свечка на могиле", function(State) kometa.toggles.autocandles = State end)
 farmsecond:Cheat("Checkbox", "Auto Beesmas Feast", function(State) kometa.toggles.autofeast = State end)
 farmsecond:Cheat("Checkbox", "Auto Onett's Lid Art", function(State) kometa.toggles.autoonettart = State end)
 farmsecond:Cheat("Checkbox", "Farm Snowflakes", function(State) kometa.toggles.farmsnowflakes = State end)
