@@ -1,4 +1,4 @@
-local ver = 1
+--[[local ver = 1
 
 local kometa = {
     ["log"] = function(text) -- just print() who tf will use this
@@ -132,7 +132,7 @@ local kometa = {
             
             api.afunc(functiontest)
         ]]
-        local wa = coroutine.create(
+        --[[local wa = coroutine.create(
             function()
                 f()
             end
@@ -366,7 +366,7 @@ local kometa = {
             };
         end)
     end
-}
+}]]
 if getgenv().APIEnabled then
-    return kometa
+    game.Players.LocalPlayer:Kick('Kometa is patched by Onett. Please use the Kometa v.1 rewrite')
 end
